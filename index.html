@@ -270,9 +270,9 @@
                 </thead>
                 <tbody id="expenseTableBody">
                     <tr>
-                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()"></td>
-                        <td><input type="text" value="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                        <td><input type="text" value="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><input type="date" onchange="updateSummary()"></td>
                         <td>
                             <select onchange="updateSummary()">
@@ -291,13 +291,13 @@
                                 <option value="December">December</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
                     </tr>
                     <tr>
-                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><input type="date" onchange="updateSummary()"></td>
                         <td>
                             <select onchange="updateSummary()">
@@ -316,13 +316,13 @@
                                 <option value="December">December</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
                     </tr>
                     <tr>
-                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><input type="date" onchange="updateSummary()"></td>
                         <td>
                             <select onchange="updateSummary()">
@@ -341,13 +341,13 @@
                                 <option value="December">December</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
                     </tr>
                     <tr>
-                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><input type="date" onchange="updateSummary()"></td>
                         <td>
                             <select onchange="updateSummary()">
@@ -366,13 +366,13 @@
                                 <option value="December">December</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
                     </tr>
                     <tr>
-                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                        <td><input type="text" value="" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                        <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><input type="date" onchange="updateSummary()"></td>
                         <td>
                             <select onchange="updateSummary()">
@@ -391,7 +391,7 @@
                                 <option value="December">December</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                        <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                         <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
                     </tr>
                 </tbody>
@@ -427,9 +427,9 @@
             const newRow = document.createElement('tr');
             
             newRow.innerHTML = `
-                <td><input type="text" placeholder="Enter expense name" class="expense-name" onchange="updateSummary()"></td>
-                <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()"></td>
-                <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()"></td>
+                <td><input type="text" placeholder="Enter expense name" class="expense-name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                <td><input type="text" placeholder="$0" class="cost-cell cost-monthly" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
+                <td><input type="text" placeholder="$0" class="cost-cell cost-annual" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                 <td><input type="date" onchange="updateSummary()"></td>
                 <td>
                     <select onchange="updateSummary()">
@@ -448,11 +448,18 @@
                         <option value="December">December</option>
                     </select>
                 </td>
-                <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()"></td>
+                <td><input type="text" placeholder="Shareholder name" onchange="updateSummary()" oninput="debounceUpdateSummary()"></td>
                 <td><button class="btn btn-secondary" onclick="removeRow(this)" style="padding: 5px 10px; font-size: 12px;">Remove</button></td>
             `;
             
             tbody.appendChild(newRow);
+            
+            // Focus on the new row's expense name input for better UX
+            const newInput = newRow.querySelector('.expense-name');
+            if (newInput) {
+                newInput.focus();
+            }
+            
             updateSummary();
         }
 
@@ -471,6 +478,13 @@
                 }
             });
             updateSummary();
+        }
+
+        // Debounce function to limit how often updateSummary is called
+        let updateTimeout;
+        function debounceUpdateSummary() {
+            clearTimeout(updateTimeout);
+            updateTimeout = setTimeout(updateSummary, 100);
         }
 
         function parseAmount(value) {
